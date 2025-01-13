@@ -15,7 +15,7 @@ Applied perturbation to distill knowledge from LAION-5B with limited data traini
 First, download and set up the repo:
 
 ```bash
-git clone https://github.com/facebookresearch/DiT.git
+git clone https://github.com/pinht126/SDiT.git
 cd SDiT
 ```
 
