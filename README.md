@@ -5,10 +5,13 @@ However, retraining DiT on massive datasets like LAION-5B requires significant r
 ! Let's leverage the distillation technique to transfer the knowledge of Stable Diffusion, trained on LAION-5B, to DiT.
 
 <img width="1415" alt="image (5)" src="https://github.com/user-attachments/assets/ba3837c8-6940-4e9d-82dc-21b9dc29b5fa" />
-<img width="1841" alt="image (7)" src="https://github.com/user-attachments/assets/9f8a95cf-5cdc-4f01-b410-c915ff7b8425" />
 
 Existing loss + loss based on epsilon predicted by Stable Diffusion
 Applied perturbation to distill knowledge from LAION-5B with limited data training
+<img width="1841" alt="image (7)" src="https://github.com/user-attachments/assets/9f8a95cf-5cdc-4f01-b410-c915ff7b8425" />
+
+We also utilize GPT-4.0 to extract N relevant attributes for each class name. Then, we randomly mask some of these attributes to introduce perturbations into the text-to-image diffusion model.
+![image (25)](https://github.com/user-attachments/assets/2431beb7-b98d-4d14-a049-0ea39c838f2e)
 
 ## Setup
 
